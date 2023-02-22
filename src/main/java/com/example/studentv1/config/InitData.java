@@ -20,7 +20,7 @@ public class InitData implements CommandLineRunner {
     public void run(String... args) throws Exception {
         if (3>4) {
             Student s1 = new Student();
-            s1.setId(1);
+            s1.setId(1); //hej
             s1.setName("Viggo");
             s1.setBornDate(LocalDate.now());
             s1.setBornTime(LocalTime.now());
