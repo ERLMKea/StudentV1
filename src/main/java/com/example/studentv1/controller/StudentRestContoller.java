@@ -22,6 +22,12 @@ public class StudentRestContoller {
         return studentRepository.findAll();
     }
 
+    @GetMapping("/students2")
+    public List<Student> students2() {
+
+        return studentRepository.findAll();
+    }
+
     @GetMapping("/teststudent")
     public List<Student> teststudent() {
         Student std = new Student();
