@@ -28,6 +28,12 @@ public class StudentRestContoller {
         return studentRepository.findAll();
     }
 
+    @GetMapping("/")
+    public List<Student> studentsroot() {
+
+        return studentRepository.findAll();
+    }
+
     @GetMapping("/teststudent")
     public List<Student> teststudent() {
         Student std = new Student();
